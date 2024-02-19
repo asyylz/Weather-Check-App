@@ -1,5 +1,7 @@
 /* -------------------- DOM variables ------------------- */
 const citySearchInput = document.querySelector("input.mb-5");
+const searchIcon=document.querySelector(".fa.fa-search");
+console.log(searchIcon)
 const cityName = document.querySelector("h2");
 const weatherDegree = document.querySelector("p.large-font");
 const time = document.querySelector("p.time");
@@ -21,7 +23,7 @@ const locationIcon = document.getElementById("location");
 let cityData = [];
 let currentSunRise, currentSunSet;
 const apiKey = "b8b2bc6cc3def4c8452b6812772a682f";
-const defaultCity = "konya";
+const defaultCity = "London";
 async function fetchWeatherData(city) {
   try {
     const response = await fetch(
@@ -63,13 +65,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 citySearchInput.addEventListener("keydown", function (e) {
-  if (e.keyCode === 13) {
+  if (e.keyCode === 13){
     e.preventDefault();
     let city = e.target.value;
     fetchWeatherData(city);
   }
 });
-
+searchIcon.addEventListener("click", function (e) {
+  let city = citySearchInput.value;
+  fetchWeatherData(city);
+});
 locationIcon.addEventListener("click", function (e) {
   const units = "metric";
   navigator.geolocation?.getCurrentPosition(async ({ coords }) => {
