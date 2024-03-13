@@ -16,6 +16,18 @@
         <li><strong>API Integration: </strong>The app integrates with the OpenWeatherMap API to retrieve weather data
             for the specified city. It constructs API requests with the appropriate query parameters (e.g., city name,
             API key, units) and processes the JSON response to extract relevant weather information.</li>
+        <li><strong>Event Handling: </strong>Event listeners are used to handle user interactions such as clicking the
+            search icon, pressing Enter in the input field, or clicking the geolocation icon. These listeners trigger
+            the appropriate actions (e.g., fetching weather data, displaying city options) in response to user input.
+        </li>
+        <li><strong>Geolocation</strong>The app utilizes the browser's geolocation API to retrieve the user's current
+            location (latitude and longitude). It then makes an API request to fetch weather data for the detected
+            location and updates the UI accordingly.</li>
+        <li><strong>Error Handling: </strong>The app includes error handling mechanisms to catch and handle any errors
+            that may occur during API requests or data processing. It logs error messages to the console and ensures a
+            graceful user experience even in case of errors.</li>
+        <li><strong>Styling:</strong>The app applies styling to HTML elements dynamically based on weather conditions.
+            It changes the background image of the container element depending on whether it is day or night, providing
+            a visual representation of the current weather.</li>
     </ol>
-
 </body>
