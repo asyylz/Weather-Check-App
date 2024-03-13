@@ -54,5 +54,11 @@
       git clone https://github.com/asyylz/Weather-Check-App.git
     </code>
     </pre>
+      <h2>Contributing</h2>
+    <p>If you have ideas for additional projects or improvements to existing projects, contributions are welcome! Feel
+        free to open an issue to discuss your ideas or submit a pull request with your changes.</p>
+    <br>
+    <h2>License</h2>
+    <p>This repository is licensed under the MIT License. See the MIT licence file for details.</p>
 
 </body>
