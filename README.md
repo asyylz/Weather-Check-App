@@ -45,5 +45,14 @@
             └── README.md
         </code>
     </pre>
+    <br>
+    <h2>Getting Started</h2>
+    To get started with these projects, clone the repository to your local machine:
+    <br>
+    <pre>
+    <code style="background-color: antiquewhite;">
+      git clone https://github.com/asyylz/Weather-Check-App.git
+    </code>
+    </pre>
 
 </body>
